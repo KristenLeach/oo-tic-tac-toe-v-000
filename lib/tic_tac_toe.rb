@@ -32,7 +32,7 @@ def input_to_index(input)
   @index = input.to_i - 1 
 end
 
-def move(array, input, char)
+def move(board, input, char)
   @board[@index] = @char
 end
 
