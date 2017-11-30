@@ -33,7 +33,7 @@ def input_to_index(input)
 end
 
 def move(array, input, char)
-  @board[@index] = char
+  @board[index] = char
 end
 
 def turn(board)
