@@ -107,7 +107,7 @@ end
 def winner
     if won?
        winning_line = won?
-       return @board[winning_line[0]]
+       return [winning_line[0]]
     end
 end
 end
