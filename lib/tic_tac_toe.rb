@@ -63,7 +63,7 @@ end
 
 def turn_count
   counter = 0
-  @board.each do |space|
+  board.each do |space|
     if space != " "
       counter += 1 
     end
