@@ -32,7 +32,7 @@ def input_to_index(input)
   @index = input.to_i - 1 
 end
 
-def move(index, character)
+def move(index, character = X)
   @board.index = current_player
 end
 
@@ -61,9 +61,9 @@ def play(board)
 end
 end
 
-def turn_count(board)
+def turn_count
   counter = 0
-  board.each do |space|
+  @board.each do |space|
     if space != " "
       counter += 1 
     end
