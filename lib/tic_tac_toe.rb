@@ -1,6 +1,6 @@
 class TicTacToe
   def initialize(board)
-    @board = board(board)
+    @board = board[array]
   end
   def board=(board)
     @board = board
