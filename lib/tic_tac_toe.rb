@@ -29,11 +29,11 @@ def position_taken?(board, index)
 end 
 
 def input_to_index(input)
-  @input = input.to_i - 1 
+  @in = input.to_i - 1 
 end
 
 def move(array, input, char)
-  array[input] = char
+  @board[@input] = char
 end
 
 def turn(board)
