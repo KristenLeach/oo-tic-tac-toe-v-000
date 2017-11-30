@@ -33,7 +33,7 @@ def input_to_index(input)
 end
 
 def move
-  @board[index] = char
+  @board[@index] = 
 end
 
 def turn(board)
@@ -71,10 +71,11 @@ def turn_count(board)
   return counter
 end
 
-def current_player(board)
-    if turn_count(board).odd? 
+def current_player
+  @char = current_player
+    if @board.turn_count.odd? 
       return "O"
-    elsif turn_count(board).even?
+    elsif @board.turn_count.even?
       return "X"
     end
 end
