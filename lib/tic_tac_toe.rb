@@ -90,24 +90,24 @@ end
       end
   end 
   
-def full?(board)
-  board.none? do |index|
+def full?
+  @board.none? do |index|
      index == " "
   end
 end 
 
-def draw?(board)
-  full?(board) && !won?(board)
+def draw?
+  full? && !won?
 end
   
-def over?(board)
-  full?(board) || won?(board) || draw?(board) 
+def over?
+  full? || won? || draw? 
 end
 
-def winner(board)
-    if won?(board)
-       winning_line = won?(board)
-       return board[winning_line[0]]
+def winner
+    if won?
+       winning_line = won?
+       return @board[winning_line[0]]
     end
 end
 end
